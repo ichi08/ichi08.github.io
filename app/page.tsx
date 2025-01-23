@@ -1,5 +1,5 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <section id="profile" className="mb-16">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/259909_Man,The%20background%20should%20be%20black.%20Mystical%20aura._xl-1024-v1-0-F2Hih7Jl890VCtZEqZ5hSYi28XEWpx.png"
+            src="../picture/face.png"
             alt="山田太郎"
             width={200}
             height={200}
@@ -44,11 +44,15 @@ export default function Home() {
         <h3 className="text-2xl font-semibold mb-4">実績</h3>
         <div className="space-y-4 max-w-2xl mx-auto">
           <div className="bg-accent p-4 rounded-lg">
-            <h4 className="text-xl font-semibold mb-2">顧客離反予測モデルの構築</h4>
+            <h4 className="text-xl font-semibold mb-2">
+              顧客離反予測モデルの構築
+            </h4>
             <p>精度: 85%、コスト削減: 20%</p>
           </div>
           <div className="bg-accent p-4 rounded-lg">
-            <h4 className="text-xl font-semibold mb-2">売上予測システムの開発</h4>
+            <h4 className="text-xl font-semibold mb-2">
+              売上予測システムの開発
+            </h4>
             <p>予測精度: MAPE 7%、在庫コスト削減: 15%</p>
           </div>
         </div>
@@ -74,24 +78,39 @@ export default function Home() {
         <h3 className="text-2xl font-semibold mb-4">リンク</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <Link href="#" className="link-box block group">
-            <h4 className="text-xl font-semibold text-accent group-hover:underline">ポートフォリオ</h4>
-            <p className="mt-2 text-sm">過去のプロジェクトや成果物をご覧いただけます。</p>
+            <h4 className="text-xl font-semibold text-accent group-hover:underline">
+              ポートフォリオ
+            </h4>
+            <p className="mt-2 text-sm">
+              過去のプロジェクトや成果物をご覧いただけます。
+            </p>
           </Link>
           <Link href="#" className="link-box block group">
-            <h4 className="text-xl font-semibold text-accent group-hover:underline">ブログ</h4>
-            <p className="mt-2 text-sm">データサイエンスに関する記事や最新のトレンドを発信しています。</p>
+            <h4 className="text-xl font-semibold text-accent group-hover:underline">
+              ブログ
+            </h4>
+            <p className="mt-2 text-sm">
+              データサイエンスに関する記事や最新のトレンドを発信しています。
+            </p>
           </Link>
           <Link href="#" className="link-box block group">
-            <h4 className="text-xl font-semibold text-accent group-hover:underline">GitHub</h4>
-            <p className="mt-2 text-sm">オープンソースプロジェクトやコード例をご覧いただけます。</p>
+            <h4 className="text-xl font-semibold text-accent group-hover:underline">
+              GitHub
+            </h4>
+            <p className="mt-2 text-sm">
+              オープンソースプロジェクトやコード例をご覧いただけます。
+            </p>
           </Link>
           <Link href="#" className="link-box block group">
-            <h4 className="text-xl font-semibold text-accent group-hover:underline">LinkedIn</h4>
-            <p className="mt-2 text-sm">職歴やスキルの詳細、推薦文をご覧いただけます。</p>
+            <h4 className="text-xl font-semibold text-accent group-hover:underline">
+              LinkedIn
+            </h4>
+            <p className="mt-2 text-sm">
+              職歴やスキルの詳細、推薦文をご覧いただけます。
+            </p>
           </Link>
         </div>
       </section>
     </>
-  )
+  );
 }
-
