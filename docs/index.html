@@ -1,61 +1,121 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>山田太郎 - データサイエンティスト</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>山田太郎</h1>
-        <h2>データサイエンティスト</h2>
-        <p class="catchphrase">データで未来を描く</p>
-    </header>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="max-w-4xl mx-auto px-4 py-12">
+      <header class="text-center mb-16">
+        <h1 class="text-4xl font-bold mb-2">山田太郎</h1>
+        <h2 class="text-2xl text-accent mb-2">データサイエンティスト</h2>
+        <p class="text-xl italic">データで未来を描く</p>
+      </header>
 
-    <main>
-        <section id="profile">
-            <img src="./picture/face.png" alt="山田太郎" class="profile-photo">
-            <div class="intro">
-                <h3>自己紹介</h3>
-                <p>機械学習と統計分析を専門とするデータサイエンティストです。ビジネス課題を数理モデルで解決することが得意です。</p>
-            </div>
-        </section>
+      <section id="profile" class="mb-16">
+        <div class="profile-container">
+          <img
+            src="./picture/face.png"
+            alt="山田太郎"
+            width="200"
+            height="200"
+            class="rounded-full profile-image"
+          />
+        </div>
+        <div class="profile-text">
+          <h3 class="text-2xl font-semibold mb-4">自己紹介</h3>
+          <p>
+            機械学習と統計分析を専門とするデータサイエンティストです。ビジネス課題を数理モデルで解決することが得意です。
+          </p>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h3>スキル</h3>
-            <ul>
-                <li>Python (NumPy, Pandas, Scikit-learn)</li>
-                <li>R</li>
-                <li>SQL</li>
-                <li>機械学習 (回帰分析、分類、クラスタリング)</li>
-                <li>統計分析</li>
-                <li>データ可視化 (Matplotlib, Seaborn, ggplot2)</li>
-            </ul>
-        </section>
+      <section id="skills" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4">スキル</h3>
+        <ul class="list-disc pl-5 max-w-2xl mx-auto">
+          <li>Python (NumPy, Pandas, Scikit-learn)</li>
+          <li>R</li>
+          <li>SQL</li>
+          <li>機械学習 (回帰分析、分類、クラスタリング)</li>
+          <li>統計分析</li>
+          <li>データ可視化 (Matplotlib, Seaborn, ggplot2)</li>
+        </ul>
+      </section>
 
-        <section id="achievements">
-            <h3>実績</h3>
-            <div class="achievement">
-                <h4>顧客離反予測モデルの構築</h4>
-                <p>精度: 85%、コスト削減: 20%</p>
-            </div>
-            <div class="achievement">
-                <h4>売上予測システムの開発</h4>
-                <p>予測精度: MAPE 7%、在庫コスト削減: 15%</p>
-            </div>
-        </section>
+      <section id="achievements" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4">実績</h3>
+        <div class="space-y-4 max-w-2xl mx-auto">
+          <div class="bg-accent p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">顧客離反予測モデルの構築</h4>
+            <p>精度: 85%、コスト削減: 20%</p>
+          </div>
+          <div class="bg-accent p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">売上予測システムの開発</h4>
+            <p>予測精度: MAPE 7%、在庫コスト削減: 15%</p>
+          </div>
+        </div>
+      </section>
 
-        <section id="links">
-            <h3>リンク</h3>
-            <a href="#" class="button">ポートフォリオ</a>
-            <a href="#" class="button">ブログ</a>
-        </section>
+      <section id="education" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4">学歴</h3>
+        <div class="max-w-2xl mx-auto">
+          <div class="mb-4">
+            <h4 class="text-xl font-semibold">○○大学大学院</h4>
+            <p>情報科学研究科 修士課程修了</p>
+            <p class="text-sm text-gray-600">2018年4月 - 2020年3月</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold">○○大学</h4>
+            <p>理工学部 情報工学科 卒業</p>
+            <p class="text-sm text-gray-600">2014年4月 - 2018年3月</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="links" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4">リンク</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <a href="#" class="link-box block group">
+            <h4 class="text-xl font-semibold text-accent group-hover:underline">
+              ポートフォリオ
+            </h4>
+            <p class="mt-2 text-sm">
+              過去のプロジェクトや成果物をご覧いただけます。
+            </p>
+          </a>
+          <a href="#" class="link-box block group">
+            <h4 class="text-xl font-semibold text-accent group-hover:underline">
+              ブログ
+            </h4>
+            <p class="mt-2 text-sm">
+              データサイエンスに関する記事や最新のトレンドを発信しています。
+            </p>
+          </a>
+          <a href="#" class="link-box block group">
+            <h4 class="text-xl font-semibold text-accent group-hover:underline">
+              GitHub
+            </h4>
+            <p class="mt-2 text-sm">
+              オープンソースプロジェクトやコード例をご覧いただけます。
+            </p>
+          </a>
+          <a href="#" class="link-box block group">
+            <h4 class="text-xl font-semibold text-accent group-hover:underline">
+              LinkedIn
+            </h4>
+            <p class="mt-2 text-sm">
+              職歴やスキルの詳細、推薦文をご覧いただけます。
+            </p>
+          </a>
+        </div>
+      </section>
     </main>
-
-    <footer>
-        <p>&copy; 2023 山田太郎. All rights reserved.</p>
+    <footer
+      class="text-center mt-12 py-4 border-t border-accent bg-white bg-opacity-90"
+    >
+      <p>&copy; 2023 山田太郎. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
-
