@@ -60,6 +60,19 @@ h4 {
   color: var(--primary);
 }
 
+/* profile セクションのスタイル */
+.profile-container {
+  display: flex;
+  gap: 2rem; /* 画像とテキストの間隔 */
+  align-items: flex-start; /* 上揃え */
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
 .link-box {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem;
@@ -190,6 +203,14 @@ h4 {
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .profile-container {
+    flex-direction: column; /* 縦並びにする */
+    align-items: center; /* 中央揃え */
+    text-align: center; /* テキストを中央揃え */
+  }
+  .profile-image {
+    margin-bottom: 1rem; /* 画像の下にマージンを追加 */
   }
 }
 
