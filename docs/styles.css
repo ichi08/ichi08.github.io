@@ -139,6 +139,10 @@ h4 {
 }
 .rounded-full {
   border-radius: 9999px;
+  display: flex;
+  flex-direction: column; /* 縦並びを維持 */
+  align-items: center; /* 中央揃え */
+  gap: 1rem;
 }
 .list-disc {
   list-style-type: disc;
