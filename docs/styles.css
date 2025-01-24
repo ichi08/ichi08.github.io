@@ -1,7 +1,7 @@
 :root {
   --primary: #000000;
   --secondary: #ffffff;
-  --accent: #d3d3d3;
+  --accent: #a0d2eb;
   --text: #333333;
   --bg-base: #f8f9fa;
 }
@@ -21,7 +21,7 @@ body::before {
   left: -10%;
   width: 120%;
   height: 120%;
-  background-image: url("./picture/gemini2.jpeg");
+  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_lx1m3llx1m3llx1m-lg6LuG7fPVfZgg7EBPlUHx1UAVNCof.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,19 +60,6 @@ h4 {
   color: var(--primary);
 }
 
-/* profile セクションのスタイル */
-.profile-container {
-  display: flex;
-  gap: 2rem; /* 画像とテキストの間隔 */
-  align-items: center; /* 上揃え */
-}
-
-.profile-image {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
 .link-box {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem;
@@ -94,6 +81,9 @@ h4 {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .btn-primary:hover {
@@ -152,10 +142,6 @@ h4 {
 }
 .rounded-full {
   border-radius: 9999px;
-  display: flex;
-  flex-direction: column; /* 縦並びを維持 */
-  align-items: center; /* 中央揃え */
-  gap: 1rem;
 }
 .list-disc {
   list-style-type: disc;
@@ -204,14 +190,6 @@ h4 {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .profile-container {
-    flex-direction: column; /* 縦並びにする */
-    align-items: center; /* 中央揃え */
-    text-align: center; /* テキストを中央揃え */
-  }
-  .profile-image {
-    margin-bottom: 1rem; /* 画像の下にマージンを追加 */
-  }
 }
 
 @media (max-width: 768px) {
@@ -222,4 +200,11 @@ h4 {
   section {
     padding: 1rem;
   }
+}
+
+.language-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
 }

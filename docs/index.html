@@ -7,89 +7,153 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="language-switcher">
+      <button id="langToggle" class="btn-primary">English</button>
+    </div>
     <main class="max-w-4xl mx-auto px-4 py-12">
       <header class="text-center mb-16">
-        <h1 class="text-4xl font-bold mb-2">山田太郎</h1>
-        <h2 class="text-2xl text-accent mb-2">データサイエンティスト</h2>
-        <p class="text-xl italic">データで未来を描く</p>
+        <h1 class="text-4xl font-bold mb-2" data-en="Taro Yamada">山田太郎</h1>
+        <h2 class="text-2xl text-accent mb-2" data-en="Data Scientist">
+          データサイエンティスト
+        </h2>
+        <p class="text-xl italic" data-en="Shaping the future with data">
+          データで未来を描く
+        </p>
       </header>
 
       <section id="profile" class="mb-16">
-        <div class="profile-container">
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8"
+        >
           <img
-            src="./picture/face.png"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/259909_Man,The%20background%20should%20be%20black.%20Mystical%20aura._xl-1024-v1-0-F2Hih7Jl890VCtZEqZ5hSYi28XEWpx.png"
             alt="山田太郎"
             width="200"
             height="200"
-            class="rounded-full profile-image"
+            class="rounded-full order-1"
           />
-        </div>
-        <div class="profile-text">
-          <h3 class="text-2xl font-semibold mb-4">自己紹介</h3>
-          <p>
-            機械学習と統計分析を専門とするデータサイエンティストです。ビジネス課題を数理モデルで解決することが得意です。
-          </p>
+          <div class="max-w-2xl order-2">
+            <h3 class="text-2xl font-semibold mb-4" data-en="About Me">
+              自己紹介
+            </h3>
+            <p
+              data-en="I am a data scientist specializing in machine learning and statistical analysis. I excel at solving business challenges using mathematical models."
+            >
+              機械学習と統計分析を専門とするデータサイエンティストです。ビジネス課題を数理モデルで解決することが得意です。
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="skills" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">スキル</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-en="Skills">スキル</h3>
         <ul class="list-disc pl-5 max-w-2xl mx-auto">
           <li>Python (NumPy, Pandas, Scikit-learn)</li>
           <li>R</li>
           <li>SQL</li>
-          <li>機械学習 (回帰分析、分類、クラスタリング)</li>
-          <li>統計分析</li>
-          <li>データ可視化 (Matplotlib, Seaborn, ggplot2)</li>
+          <li
+            data-en="Machine Learning (Regression, Classification, Clustering)"
+          >
+            機械学習 (回帰分析、分類、クラスタリング)
+          </li>
+          <li data-en="Statistical Analysis">統計分析</li>
+          <li data-en="Data Visualization (Matplotlib, Seaborn, ggplot2)">
+            データ可視化 (Matplotlib, Seaborn, ggplot2)
+          </li>
         </ul>
       </section>
 
       <section id="achievements" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">実績</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-en="Achievements">実績</h3>
         <div class="space-y-4 max-w-2xl mx-auto">
           <div class="bg-accent p-4 rounded-lg">
-            <h4 class="text-xl font-semibold mb-2">顧客離反予測モデルの構築</h4>
-            <p>精度: 85%、コスト削減: 20%</p>
+            <h4
+              class="text-xl font-semibold mb-2"
+              data-en="Development of Customer Churn Prediction Model"
+            >
+              顧客離反予測モデルの構築
+            </h4>
+            <p data-en="Accuracy: 85%, Cost Reduction: 20%">
+              精度: 85%、コスト削減: 20%
+            </p>
           </div>
           <div class="bg-accent p-4 rounded-lg">
-            <h4 class="text-xl font-semibold mb-2">売上予測システムの開発</h4>
-            <p>予測精度: MAPE 7%、在庫コスト削減: 15%</p>
+            <h4
+              class="text-xl font-semibold mb-2"
+              data-en="Development of Sales Forecasting System"
+            >
+              売上予測システムの開発
+            </h4>
+            <p
+              data-en="Prediction Accuracy: MAPE 7%, Inventory Cost Reduction: 15%"
+            >
+              予測精度: MAPE 7%、在庫コスト削減: 15%
+            </p>
           </div>
         </div>
       </section>
 
       <section id="education" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">学歴</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-en="Education">学歴</h3>
         <div class="max-w-2xl mx-auto">
           <div class="mb-4">
-            <h4 class="text-xl font-semibold">○○大学大学院</h4>
-            <p>情報科学研究科 修士課程修了</p>
-            <p class="text-sm text-gray-600">2018年4月 - 2020年3月</p>
+            <h4
+              class="text-xl font-semibold"
+              data-en="XX University Graduate School"
+            >
+              ○○大学大学院
+            </h4>
+            <p data-en="Master's Degree in Information Science">
+              情報科学研究科 修士課程修了
+            </p>
+            <p class="text-sm text-gray-600" data-en="April 2018 - March 2020">
+              2018年4月 - 2020年3月
+            </p>
           </div>
           <div>
-            <h4 class="text-xl font-semibold">○○大学</h4>
-            <p>理工学部 情報工学科 卒業</p>
-            <p class="text-sm text-gray-600">2014年4月 - 2018年3月</p>
+            <h4 class="text-xl font-semibold" data-en="XX University">
+              ○○大学
+            </h4>
+            <p
+              data-en="Bachelor's Degree in Information Engineering, Faculty of Science and Engineering"
+            >
+              理工学部 情報工学科 卒業
+            </p>
+            <p class="text-sm text-gray-600" data-en="April 2014 - March 2018">
+              2014年4月 - 2018年3月
+            </p>
           </div>
         </div>
       </section>
 
       <section id="links" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">リンク</h3>
+        <h3 class="text-2xl font-semibold mb-4" data-en="Links">リンク</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
           <a href="#" class="link-box block group">
-            <h4 class="text-xl font-semibold text-accent group-hover:underline">
+            <h4
+              class="text-xl font-semibold text-accent group-hover:underline"
+              data-en="Portfolio"
+            >
               ポートフォリオ
             </h4>
-            <p class="mt-2 text-sm">
+            <p
+              class="mt-2 text-sm"
+              data-en="View my past projects and work samples."
+            >
               過去のプロジェクトや成果物をご覧いただけます。
             </p>
           </a>
           <a href="#" class="link-box block group">
-            <h4 class="text-xl font-semibold text-accent group-hover:underline">
+            <h4
+              class="text-xl font-semibold text-accent group-hover:underline"
+              data-en="Blog"
+            >
               ブログ
             </h4>
-            <p class="mt-2 text-sm">
+            <p
+              class="mt-2 text-sm"
+              data-en="I write about data science topics and the latest trends."
+            >
               データサイエンスに関する記事や最新のトレンドを発信しています。
             </p>
           </a>
@@ -97,7 +161,10 @@
             <h4 class="text-xl font-semibold text-accent group-hover:underline">
               GitHub
             </h4>
-            <p class="mt-2 text-sm">
+            <p
+              class="mt-2 text-sm"
+              data-en="Check out my open-source projects and code examples."
+            >
               オープンソースプロジェクトやコード例をご覧いただけます。
             </p>
           </a>
@@ -105,7 +172,10 @@
             <h4 class="text-xl font-semibold text-accent group-hover:underline">
               LinkedIn
             </h4>
-            <p class="mt-2 text-sm">
+            <p
+              class="mt-2 text-sm"
+              data-en="View my professional experience, skills, and recommendations."
+            >
               職歴やスキルの詳細、推薦文をご覧いただけます。
             </p>
           </a>
@@ -115,7 +185,29 @@
     <footer
       class="text-center mt-12 py-4 border-t border-accent bg-white bg-opacity-90"
     >
-      <p>&copy; 2023 山田太郎. All rights reserved.</p>
+      <p data-en="&copy; 2023 Taro Yamada. All rights reserved.">
+        &copy; 2023 山田太郎. All rights reserved.
+      </p>
     </footer>
+
+    <script>
+      const langToggle = document.getElementById("langToggle");
+      const elements = document.querySelectorAll("[data-en]");
+      let isJapanese = true;
+
+      langToggle.addEventListener("click", () => {
+        isJapanese = !isJapanese;
+        elements.forEach((el) => {
+          if (isJapanese) {
+            el.textContent = el.getAttribute("data-ja") || el.textContent;
+          } else {
+            el.setAttribute("data-ja", el.textContent);
+            el.textContent = el.getAttribute("data-en");
+          }
+        });
+        langToggle.textContent = isJapanese ? "English" : "日本語";
+        document.documentElement.lang = isJapanese ? "ja" : "en";
+      });
+    </script>
   </body>
 </html>
