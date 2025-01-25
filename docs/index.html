@@ -3,110 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>山田太郎 - データサイエンティスト</title>
+    <title>resume</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="max-w-4xl mx-auto px-4 py-12">
       <header class="text-center mb-16">
-        <h1 class="text-4xl font-bold mb-2">山田太郎</h1>
-        <h2 class="text-2xl text-accent mb-2">データサイエンティスト</h2>
-        <p class="text-xl italic">データで未来を描く</p>
+        <h1 class="text-4xl font-bold mb-2">履歴書</h1>
+        <h2 class="text-2xl mb-2 italic">Icchiy is A Data-Scientist.</h2>
+        <a href="index-en.html" class="language-switch">English</a>
       </header>
 
       <section id="profile" class="mb-16">
-        <div class="profile-container">
-          <img
-            src="./picture/face.png"
-            alt="山田太郎"
-            width="200"
-            height="200"
-            class="rounded-full profile-image"
-          />
-        </div>
-        <div class="profile-text">
-          <h3 class="text-2xl font-semibold mb-4">自己紹介</h3>
-          <p>
-            機械学習と統計分析を専門とするデータサイエンティストです。ビジネス課題を数理モデルで解決することが得意です。
-          </p>
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8"
+        >
+          <div class="image-wrapper">
+            <img
+              src="./picture/face.png"
+              alt="icchiy"
+              width="200"
+              height="200"
+              class="rounded-full order-1"
+            />
+          </div>
+          <div class="max-w-2xl order-2">
+            <h3 class="text-2xl font-semibold mb-4 underline">自己紹介</h3>
+            <p>
+              いっちー（icchiy）と言います。機械学習と統計分析、因果推論、AI実装を専門とするデータサイエンティストです。ビジネス課題をデータで解決することが得意です。<br />好きなことは筋トレと読書、町中で犬を見ること。
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="skills" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">スキル</h3>
+        <h3 class="text-2xl font-semibold mb-4 underline">スキル</h3>
         <ul class="list-disc pl-5 max-w-2xl mx-auto">
-          <li>Python (NumPy, Pandas, Scikit-learn)</li>
-          <li>R</li>
-          <li>SQL</li>
-          <li>機械学習 (回帰分析、分類、クラスタリング)</li>
-          <li>統計分析</li>
-          <li>データ可視化 (Matplotlib, Seaborn, ggplot2)</li>
+          <li>
+            Python ( pandas, numpy, LightGBM, torch, statsmodel, sk-learn,
+            matplotlib, seabron, diffusers, hadoop, matplotlib, seaborn )
+          </li>
+          <li>環境とツール : SQL, BQ, DOMO, Git, JupyterLab</li>
+        </ul>
+      </section>
+
+      <section id="qualification" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4 underline">資格</h3>
+        <ul class="list-disc pl-5 max-w-2xl mx-auto">
+          <li>TOEIC=805 (2024/12)</li>
+          <li>統計検定準１級 (2023/11)</li>
+          <li>銀行業務検定融資２級 (2021/10)</li>
+          <li>証券外務員 (2020/04)</li>
         </ul>
       </section>
 
       <section id="achievements" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">実績</h3>
+        <h3 class="text-2xl font-semibold mb-4 underline">プロジェクト</h3>
         <div class="space-y-4 max-w-2xl mx-auto">
-          <div class="bg-accent p-4 rounded-lg">
-            <h4 class="text-xl font-semibold mb-2">顧客離反予測モデルの構築</h4>
-            <p>精度: 85%、コスト削減: 20%</p>
+          <div class="p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">
+              画像生成AIによるバナー生成（2024/08 ~ 現在）
+            </h4>
+            <p>
+              画像生成AI「StableDiffusion」を活用した広告バナー生成プロジェクトに従事。<br />
+              InpaintingやControlNet、Img2Img、Tokenの上限突破、Regional
+              Prompterなどの技術を駆使し、高品質なバナー画像を生成。<br />
+              加えて画像生成のためのワークフローを構築。
+            </p>
           </div>
-          <div class="bg-accent p-4 rounded-lg">
-            <h4 class="text-xl font-semibold mb-2">売上予測システムの開発</h4>
-            <p>予測精度: MAPE 7%、在庫コスト削減: 15%</p>
+          <div class="p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">
+              効果検証（2023/03 ~ 現在）
+            </h4>
+            <p>
+              クライアントの課題把握から施策結果のプレゼンまで一貫して担当。<br />
+              基本属性ごとの集計分析に加え、線形回帰やSHAP値を用いた解釈性の高い分析を実施。ロジスティック回帰による傾向スコア算出とそのスコアを用いたIPWを実施し施策効果の定量化も行う。
+            </p>
+          </div>
+          <div class="p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">
+              マーケティングリストの作成（2023/03 ~ 現在）
+            </h4>
+            <p>
+              基本的な抽出手法（例:
+              既契約者の除外）から、LightGBMによる予測確率を活用したターゲティングを実施。<br />
+              また、バイアス除去のため、傾向スコアを使った重み付け学習によるターゲット選定を実施。
+            </p>
           </div>
         </div>
       </section>
 
       <section id="education" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">学歴</h3>
+        <h3 class="text-2xl font-semibold mb-4 underline">学歴</h3>
         <div class="max-w-2xl mx-auto">
-          <div class="mb-4">
-            <h4 class="text-xl font-semibold">○○大学大学院</h4>
-            <p>情報科学研究科 修士課程修了</p>
-            <p class="text-sm text-gray-600">2018年4月 - 2020年3月</p>
-          </div>
           <div>
-            <h4 class="text-xl font-semibold">○○大学</h4>
-            <p>理工学部 情報工学科 卒業</p>
-            <p class="text-sm text-gray-600">2014年4月 - 2018年3月</p>
+            <h4 class="text-xl font-semibold">高知工科大学</h4>
+            <p>経済・マネジメント学群 経済学専攻 卒業</p>
+            <p class="text-sm text-gray-600">2016年4月 - 2020年3月</p>
           </div>
         </div>
       </section>
 
       <section id="links" class="mb-16">
-        <h3 class="text-2xl font-semibold mb-4">リンク</h3>
+        <h3 class="text-2xl font-semibold mb-4 underline">リンク</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-          <a href="#" class="link-box block group">
-            <h4 class="text-xl font-semibold text-accent group-hover:underline">
-              ポートフォリオ
-            </h4>
+          <a href="https://github.com/ichi08" class="link-box block group">
+            <h4 class="text-xl font-semibold group-hover:underline">GitHub</h4>
             <p class="mt-2 text-sm">
               過去のプロジェクトや成果物をご覧いただけます。
             </p>
           </a>
-          <a href="#" class="link-box block group">
-            <h4 class="text-xl font-semibold text-accent group-hover:underline">
-              ブログ
-            </h4>
+          <a href="https://qiita.com/icchi-ioo" class="link-box block group">
+            <h4 class="text-xl font-semibold group-hover:underline">Qitta</h4>
             <p class="mt-2 text-sm">
-              データサイエンスに関する記事や最新のトレンドを発信しています。
+              テックブログです。データサイエンスに関する記事や最新のトレンド,
+              気になった技術について発信しています。
             </p>
           </a>
-          <a href="#" class="link-box block group">
-            <h4 class="text-xl font-semibold text-accent group-hover:underline">
-              GitHub
+          <a href="https://x.com/icchi225" class="link-box block group">
+            <h4 class="text-xl font-semibold group-hover:underline">
+              X(旧Twitter)
             </h4>
             <p class="mt-2 text-sm">
-              オープンソースプロジェクトやコード例をご覧いただけます。
-            </p>
-          </a>
-          <a href="#" class="link-box block group">
-            <h4 class="text-xl font-semibold text-accent group-hover:underline">
-              LinkedIn
-            </h4>
-            <p class="mt-2 text-sm">
-              職歴やスキルの詳細、推薦文をご覧いただけます。
+              ゆるっと呟いています。ご連絡はこちらから。
             </p>
           </a>
         </div>
@@ -115,7 +134,8 @@
     <footer
       class="text-center mt-12 py-4 border-t border-accent bg-white bg-opacity-90"
     >
-      <p>&copy; 2023 山田太郎. All rights reserved.</p>
+      <p>&copy; 2025 icchiy All rights reserved.</p>
     </footer>
+    <script src="random-background.js"></script>
   </body>
 </html>

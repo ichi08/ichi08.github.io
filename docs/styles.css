@@ -1,9 +1,9 @@
 :root {
-  --primary: #000000;
-  --secondary: #ffffff;
-  --accent: #d3d3d3;
-  --text: #333333;
-  --bg-base: #f8f9fa;
+  --primary: #303030;
+  --secondary: #f4f4f4;
+  --accent: #00cdff;
+  --text: #5f5f5f;
+  --bg-base: #eaeaea;
 }
 
 body {
@@ -21,31 +21,32 @@ body::before {
   left: -10%;
   width: 120%;
   height: 120%;
-  background-image: url("./picture/gemini2.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.1;
   z-index: -1;
+  transition: background-image 0.5s ease-in-out;
 }
 
 main {
   position: relative;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 0.5rem;
   padding: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 section > * {
@@ -60,31 +61,21 @@ h4 {
   color: var(--primary);
 }
 
-/* profile セクションのスタイル */
-.profile-container {
-  display: flex;
-  gap: 2rem; /* 画像とテキストの間隔 */
-  align-items: center; /* 上揃え */
-}
-
-.profile-image {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-}
-
 .link-box {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  border: 1px solid var(--accent);
+  text-decoration: none;
 }
 
 .link-box:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-0.25rem);
   background-color: rgba(255, 255, 255, 1);
+  text-decoration: underline; /* ホバー時に下線を表示 */
 }
 
 .btn-primary {
@@ -152,10 +143,6 @@ h4 {
 }
 .rounded-full {
   border-radius: 9999px;
-  display: flex;
-  flex-direction: column; /* 縦並びを維持 */
-  align-items: center; /* 中央揃え */
-  gap: 1rem;
 }
 .list-disc {
   list-style-type: disc;
@@ -166,9 +153,7 @@ h4 {
 .space-y-4 > * + * {
   margin-top: 1rem;
 }
-.bg-accent {
-  background-color: var(--accent);
-}
+
 .p-4 {
   padding: 1rem;
 }
@@ -177,6 +162,7 @@ h4 {
 }
 .text-sm {
   font-size: 0.875rem;
+  color: var(--primary);
 }
 .text-gray-600 {
   color: #4b5563;
@@ -194,6 +180,26 @@ h4 {
   color: var(--accent);
 }
 
+.image-wrapper {
+  text-align: center;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none; /* 既存のアンダーラインを削除 */
+  display: inline-block; /* インラインブロックで幅をテキストに合わせる */
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* 位置を調整 */
+  left: 0;
+  width: 100%;
+  height: 3px; /* アンダーラインの太さ */
+  background-color: var(--primary); /* アンダーラインの色 */
+}
+
 @media (min-width: 768px) {
   .md\:flex-row {
     flex-direction: row;
@@ -203,14 +209,6 @@ h4 {
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .profile-container {
-    flex-direction: column; /* 縦並びにする */
-    align-items: center; /* 中央揃え */
-    text-align: center; /* テキストを中央揃え */
-  }
-  .profile-image {
-    margin-bottom: 1rem; /* 画像の下にマージンを追加 */
   }
 }
 
@@ -222,4 +220,20 @@ h4 {
   section {
     padding: 1rem;
   }
+}
+
+.language-switch {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent);
+  color: var(--primary);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.language-switch:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
 }

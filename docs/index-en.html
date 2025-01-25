@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="max-w-4xl mx-auto px-4 py-12">
+      <header class="text-center mb-16">
+        <h1 class="text-4xl font-bold mb-2">Resume</h1>
+        <h2 class="text-2xl mb-2 italic">Icchiy is A Data Scientist.</h2>
+        <a href="index.html" class="language-switch">日本語</a>
+      </header>
+
+      <section id="profile" class="mb-16">
+        <div
+          class="flex flex-col md:flex-row items-center md:items-start gap-8"
+        >
+          <div class="image-wrapper">
+            <img
+              src="./picture/face.png"
+              alt="icchiy"
+              width="200"
+              height="200"
+              class="rounded-full order-1"
+            />
+          </div>
+          <div class="max-w-2xl order-2">
+            <h3 class="text-2xl font-semibold mb-4 underline">Profile</h3>
+            <p>
+              My name is Icchiy. I am a data scientist specializing in machine
+              learning, statistical analysis, causal inference, and AI
+              implementation. I am skilled at solving business problems using
+              data.<br />My hobbies include weight training, reading, and
+              watching dogs in the city.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4 underline">Skills</h3>
+        <ul class="list-disc pl-5 max-w-2xl mx-auto">
+          <li>
+            Python (pandas, numpy, LightGBM, torch, statsmodel, sk-learn,
+            matplotlib, seaborn, diffusers, hadoop, matplotlib, seaborn)
+          </li>
+          <li>Environment and Tools: SQL, BQ, DOMO, Git, JupyterLab</li>
+        </ul>
+      </section>
+
+      <section id="qualification" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4 underline">Qualifications</h3>
+        <ul class="list-disc pl-5 max-w-2xl mx-auto">
+          <li>TOEIC=805 (Dec 2024)</li>
+          <li>
+            Statistical Examination Semi Level 1 (Japanese test) (Nov 2023)
+          </li>
+          <li>
+            Banking Operations Certification Loan Level 2 (Japanese test) (Oct
+            2021)
+          </li>
+          <li>
+            Financial Instruments Representative (Japanese test) (Apr 2020)
+          </li>
+        </ul>
+      </section>
+
+      <section id="achievements" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4 underline">Projects</h3>
+        <div class="space-y-4 max-w-2xl mx-auto">
+          <div class="p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">
+              Banner Generation using Image Generation AI (Aug 2024 ~ Present)
+            </h4>
+            <p>
+              Engaged in an advertising banner generation project utilizing
+              image generation AI "Stable Diffusion."<br />
+              Used techniques such as Inpainting, ControlNet, Img2Img, token
+              limit extension, and Regional Prompter to create high-quality
+              banner images.<br />
+              Additionally, developed a workflow for image generation.
+            </p>
+          </div>
+          <div class="p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">
+              Effectiveness Verification (Mar 2023 ~ Present)
+            </h4>
+            <p>
+              Responsible for the full process from understanding client issues
+              to presenting the results of actions.<br />
+              Conducted analysis by basic attributes, linear regression, and
+              SHAP values for interpretable analysis. Used logistic regression
+              for propensity score calculation and applied IPW for quantifying
+              the effectiveness of the actions.
+            </p>
+          </div>
+          <div class="p-4 rounded-lg">
+            <h4 class="text-xl font-semibold mb-2">
+              Marketing List Creation (Mar 2023 ~ Present)
+            </h4>
+            <p>
+              Performed targeting using basic extraction methods (e.g.,
+              excluding existing customers) and prediction probabilities from
+              LightGBM.<br />
+              Additionally, implemented bias removal through propensity score
+              weighting learning for target selection.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4 underline">Education</h3>
+        <div class="max-w-2xl mx-auto">
+          <div>
+            <h4 class="text-xl font-semibold">
+              Kochi University of Technology
+            </h4>
+            <p>Group of Economics and Management, Economics Major, Graduated</p>
+            <p class="text-sm text-gray-600">Apr 2016 - Mar 2020</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="links" class="mb-16">
+        <h3 class="text-2xl font-semibold mb-4 underline">Links</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <a href="https://github.com/ichi08" class="link-box block group">
+            <h4 class="text-xl font-semibold group-hover:underline">GitHub</h4>
+            <p class="mt-2 text-sm">
+              You can view past projects and deliverables.
+            </p>
+          </a>
+          <a href="https://qiita.com/icchi-ioo" class="link-box block group">
+            <h4 class="text-xl font-semibold group-hover:underline">Qiita</h4>
+            <p class="mt-2 text-sm">
+              A tech blog where I share articles on data science, trends, and
+              technologies that interest me. I am sorry the blog written by
+              japanses
+            </p>
+          </a>
+          <a href="https://x.com/icchi225" class="link-box block group">
+            <h4 class="text-xl font-semibold group-hover:underline">
+              X (formerly Twitter)
+            </h4>
+            <p class="mt-2 text-sm">
+              I post casually here. Feel free to contact me.
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="text-center mt-12 py-4 border-t border-accent bg-white bg-opacity-90"
+    >
+      <p>&copy; 2025 icchiy All rights reserved.</p>
+    </footer>
+    <script src="random-background.js"></script>
+  </body>
+</html>
