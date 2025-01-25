@@ -192,7 +192,7 @@ h4 {
 .underline::after {
   content: "";
   position: absolute;
-  bottom: -6px; /* 位置を調整 */
+  bottom: -8px; /* 位置を調整 */
   left: 0;
   width: 100%;
   height: 3px; /* アンダーラインの太さ */

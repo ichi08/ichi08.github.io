@@ -7,17 +7,28 @@ const backgroundImages = [
   "./picture/gemini6.jpeg",
 ];
 
-function setRandomBackground() {
-  const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-  const selectedImage = backgroundImages[randomIndex];
+// 出現確率（合計は1になるように設定）
+const probabilities = [0.19, 0.19, 0.19, 0.19, 0.19, 0.05]; // 各画像の確率
 
-  const style = document.createElement("style");
-  style.textContent = `
-    body::before {
-      background-image: url("${selectedImage}");
+function setRandomBackground() {
+  const randomValue = Math.random();
+  let cumulativeProbability = 0;
+
+  for (let i = 0; i < probabilities.length; i++) {
+    cumulativeProbability += probabilities[i];
+    if (randomValue <= cumulativeProbability) {
+      const selectedImage = backgroundImages[i];
+
+      const style = document.createElement("style");
+      style.textContent = `
+        body::before {
+          background-image: url("${selectedImage}");
+        }
+      `;
+      document.head.appendChild(style);
+      break;
     }
-  `;
-  document.head.appendChild(style);
+  }
 }
 
 document.addEventListener("DOMContentLoaded", setRandomBackground);
