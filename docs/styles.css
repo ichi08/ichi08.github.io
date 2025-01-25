@@ -179,6 +179,11 @@ h4 {
   color: var(--accent);
 }
 
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .md\:flex-row {
     flex-direction: row;
