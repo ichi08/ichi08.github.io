@@ -21,12 +21,12 @@ body::before {
   left: -10%;
   width: 120%;
   height: 120%;
-  background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Gemini_Generated_Image_lx1m3llx1m3llx1m-lg6LuG7fPVfZgg7EBPlUHx1UAVNCof.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.1;
   z-index: -1;
+  transition: background-image 0.5s ease-in-out;
 }
 
 main {
