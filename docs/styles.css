@@ -187,7 +187,6 @@ h4 {
 .underline {
   position: relative;
   text-decoration: none; /* 既存のアンダーラインを削除 */
-  display: inline-block; /* インラインブロックで幅をテキストに合わせる */
 }
 
 .underline::after {
