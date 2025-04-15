@@ -237,7 +237,6 @@ h4 {
   color: var(--secondary);
 }
 
-.indent-paragraph {
-  text-indent: 1.5em; /* ここでインデント幅を調整できます */
+.paragraph {
   margin: 0.5em 0;
 }
